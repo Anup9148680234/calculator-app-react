@@ -19,7 +19,7 @@ function App() {
       setRes(Number.parseInt(x)*Number.parseInt(y));
     }
     else if(op === "/"){
-      setRes(Number.parseInt(x)/Number.parseInt(y));
+      setRes(Math.trunc(Number.parseInt(x)/Number.parseInt(y)));
     }
    
     document.getElementById('n1').value = "";
