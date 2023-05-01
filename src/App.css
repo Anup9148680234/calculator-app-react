@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500&display=swap');
+
+*{
+  background: black;
+  font-family: 'Red Hat Text', sans-serif;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#clr{
+  height: 25px;
+  width: fit-content;
+  float: left;
+  margin-top: 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  margin: 20vh 35vw;
+  padding: 0.5rem;
+  border: 2px solid rgb(4, 253, 0);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 21vw;
+  max-width: 320px;
+  background-color: black;
+  color: white;
+}
+label{
+  margin-top: 0.5rem;
+}
+
+
+input, select, button{
+  margin-top: 0.5rem;
+  width: 20vw;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h3{
+  padding: 0.2rem;
+  background-color: black;
+  border: 2px solid rgb(4, 253, 0);
+  width: 20vw;
+  color: rgb(0, 253, 0);
+  text-align: end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+button{
+  width: 20.5vw;
+  height: 30px;
+  background-color: rgb(4, 253, 0);
+  color: black;
+  border: 2px solid black;
+  font-weight: 500;
+}
+
+input:focus{
+  outline: none;
+  border: 2px solid rgb(0, 253, 0);
 }
